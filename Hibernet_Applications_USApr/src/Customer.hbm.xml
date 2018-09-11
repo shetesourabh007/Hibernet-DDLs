@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.marlabs.session.examples">
+ <class name="Customer1" table="Customer1">
+ <meta attribute="class-description">
+ This class contains the customer detail. 
+ </meta>
+ 
+ <id name="customerId" type="int" column="customerId">
+ 
+ </id>
+ <property name="customerName" column="customerName" type="string"/>
+ <property name="customerEmailId" column="customerEmailId" type="string"/>
+<property name="customerCity" column="customerCity" type="string"/>
+ </class>
+</hibernate-mapping>
